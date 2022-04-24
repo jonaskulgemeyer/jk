@@ -3684,16 +3684,15 @@ font-size:18px
 }
 .contact .right form .field input,
 .contact .right form .textarea textarea{
-    height: 100%;
-    width: 100%;
-    border: 2px solid black;
-    border-radius: 6px;
-    outline: none;
-    padding: 0 15px;
-    font-size: 17px;
-    font-family: 'Poppins', sans-serif;
-    transition: all 0.3s ease in;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+   height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
 }
 .contact .right form .field input:focus,
 .contact .right form .textarea textarea:focus{
@@ -3729,7 +3728,7 @@ transform-origin: 50% 50%;
     height: 100%;
     border: 2px black ;
     background:#0051ff ;
-  color:black;
+  color:white;
     outline: none;
     font-size: 20px;
     font-weight: 500;
@@ -3738,8 +3737,9 @@ transform-origin: 50% 50%;
     transition: all 0.3s ease;
 }
 .contact .right form .button button:hover{
-  color: white;
-  background-color:#0051ff;
+  color: black;
+  background-color:#eeeeee;
+ border: 2px #0051ff ;
 }
 
 
@@ -3915,16 +3915,42 @@ background-color:#111217;
 
 
 
-#contacttitle{
+
+ #contacttitle{
     position: relative;
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-	margin-bottom:50px;
- 
-    
+    margin-bottom: 60px;
+    padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
-	color:black
+	margin-right:20px;
+	margin-left:20px;
+	color:black;
+}
+ #contacttitle::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+	
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+
+}
+ #contacttitle::after{
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: black;
+    padding: 0 5px;
+    background: black;
+    transform: translateX(-50%);
+	margin-right:20px;
+	margin-left:20px;
 }
 
 *{
@@ -4847,8 +4873,3 @@ padding: 16px;
        height:40px;
 	background-color:white;
     }
-
-
-
-
-
