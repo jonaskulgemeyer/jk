@@ -11,7 +11,73 @@ html{
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 -webkit-tap-highlight-color: transparent;
 }
+.notice {
+  position: relative;
 
+  background: #F9F9F9;
+  padding: 1em 1em 1em 2em;
+  border-left: 4px solid #DDD;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
+  color:black;
+}
+
+.notice:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: -17px;
+  background-color: #DDD;
+  color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: Georgia;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  margin-left:10px;
+}
+
+.info {
+  border-color: #0074D9;
+  color:black;
+}
+
+.info:before {
+  content: "i";
+  background-color: #0074D9;
+  color:black;
+}
+
+.success {
+  border-color: #2ECC40;
+  color:black;
+}
+
+.success:before {
+  content: "√";
+  background-color: #2ECC40;
+  
+}
+
+.warning {
+  border-color: #FFDC00;
+}
+
+.warning:before {
+  content: "!";
+  background-color: #FFDC00;
+}
+
+.error {
+  border-color: #FF4136;
+}
+
+.error:before {
+  content: "X";
+  background-color: #FF4136;
+}
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
 /* RESET RULES
